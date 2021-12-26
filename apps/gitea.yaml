@@ -20,6 +20,6 @@ spec:
       enabled: true
       hosts:
         - host: git.uucloud.dev
-      paths:
-        - path: /
-          pathType: Prefix
+        paths:
+          - path: /
+            pathType: Prefix
