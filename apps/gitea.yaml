@@ -16,3 +16,11 @@ spec:
         name: gitea
         namespace: flux-system
       interval: 1m
+  values:
+    ingress:
+      enabled: true
+      hosts:
+        - host: git.uucloud.dev
+      paths:
+        - path: /
+           pathType: Prefix
