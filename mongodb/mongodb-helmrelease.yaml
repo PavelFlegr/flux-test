@@ -9,6 +9,8 @@ spec:
     spec:
       chart: mongodb
       version: '10.30.8'
+      install:
+        createNamespace: true
       sourceRef:
         kind: HelmRepository
         name: bitnami
