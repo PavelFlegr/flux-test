@@ -2,13 +2,16 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: mongodb
-  namespace: dbs
+  namespace: flux-system
 spec:
   interval: 5m
+  install:
+    createNamespace: true
   chart:
     spec:
       chart: mongodb
       version: '10.30.8'
+      targetNamespace: dbs
       sourceRef:
         kind: HelmRepository
         name: bitnami
