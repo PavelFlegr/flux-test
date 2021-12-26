@@ -19,7 +19,7 @@ spec:
     ingress:
       enabled: true
       hosts:
-        - host: git.uucloud.dev
+        - host: https://git.uucloud.dev
           paths:
             - path: /
               pathType: Prefix
