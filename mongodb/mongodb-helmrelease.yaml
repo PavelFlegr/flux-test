@@ -5,12 +5,12 @@ metadata:
   namespace: dbs
 spec:
   interval: 5m
+  install:
+    createNamespace: true
   chart:
     spec:
       chart: mongodb
       version: '10.30.8'
-      install:
-        createNamespace: true
       sourceRef:
         kind: HelmRepository
         name: bitnami
