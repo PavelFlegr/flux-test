@@ -5,13 +5,13 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
+  targetNamespace: dbs
   install:
     createNamespace: true
   chart:
     spec:
       chart: mongodb
       version: '10.30.8'
-      targetNamespace: dbs
       sourceRef:
         kind: HelmRepository
         name: bitnami
