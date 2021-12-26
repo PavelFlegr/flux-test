@@ -22,4 +22,4 @@ spec:
         - host: git.uucloud.dev
       paths:
         - path: /
-           pathType: Prefix
+          pathType: Prefix
